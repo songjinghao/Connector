@@ -7,7 +7,7 @@ A convenient and compact Server and Client communication toolkit, implemented th
 # GRADLE
 
 ``` java
-    implementation 'paul.autofly.library:connector:(insert latest version)'
+    implementation 'com.paul.song.library:connector:(insert latest version)'
 ```
 
 # Server
@@ -15,7 +15,7 @@ A convenient and compact Server and Client communication toolkit, implemented th
 Declare `ConnectService` in `AndroidManifest.xml` in `src\main` of your Server project as following.
 
 ``` java
-    <service android:name="paul.autofly.connector.ConnectService"
+    <service android:name="com.paul.song.connector.ConnectService"
         android:enabled="true"
         android:exported="true" />
 ```
