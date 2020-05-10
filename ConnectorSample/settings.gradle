@@ -1,0 +1,2 @@
+include ':app', ':connector', ':anotherapplication', ':thirdapplication'
+rootProject.name='ConnectorSample'
