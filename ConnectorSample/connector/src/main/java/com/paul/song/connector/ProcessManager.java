@@ -86,6 +86,7 @@ public class ProcessManager {
                     callback.onCallback(command);
                 } catch (RuntimeException e) {
                     Log.e(TAG, e.toString());
+                    e.printStackTrace();
                 }
             }
         } else {
@@ -108,6 +109,7 @@ public class ProcessManager {
                     callback.onCallback(command);
                 } catch (RuntimeException e) {
                     Log.e(TAG, e.toString());
+                    e.printStackTrace();
                 }
             }
         }
@@ -221,6 +223,7 @@ public class ProcessManager {
             }
         } catch (Exception e) {
             Log.e(TAG, e.toString());
+            e.printStackTrace();
         } finally {
             reset(serverPackageName);
         }

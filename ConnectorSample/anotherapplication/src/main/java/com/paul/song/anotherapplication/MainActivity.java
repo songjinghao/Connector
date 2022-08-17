@@ -2,7 +2,7 @@ package com.paul.song.anotherapplication;
 
 import android.content.ComponentName;
 import android.os.RemoteException;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendToServer(View view) {
         try {
-//            ProcessManager.getInstance().sendToHost("I am client!");
-            ProcessManager.getInstance().sendToHost(serverPackageName, "I am client!");
+            ProcessManager.getInstance().sendToHost("I am client!");
+//            ProcessManager.getInstance().sendToHost(serverPackageName, "I am client!");
 //            ProcessManager.getInstance().sendToHost(anotherServerPackageName, "I am client!");
         } catch (RemoteException e) {
             e.printStackTrace();
